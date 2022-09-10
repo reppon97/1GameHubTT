@@ -37,7 +37,7 @@
           {% for url in urls %}
               $("#btnNo-{{ forloop.counter }}").click(function(){
                   $.ajax({
-                      url: "http://localhost:8000/{{ url }}",
+                      url: "https://1gamehub.mammedov.me/{{ url }}",
                       type: 'GET',
                       success: function(data, textStatus, xhr) {
                           $("#statusCodeNo-{{ forloop.counter }}").text(xhr.status);
