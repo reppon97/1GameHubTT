@@ -50,6 +50,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+LOGIN_REDIRECT_URL = "/"
+
 ROOT_URLCONF = 'OneGameHub.urls'
 
 TEMPLATES = [

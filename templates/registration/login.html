@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="container pt-5">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+        <form method="post" class="mb-3">
+          {% csrf_token %}
+          {{ form.as_p }}
+          <button class="btn btn-primary" type="submit">Log In</button>
+        </form>
+        <h5>Don't have an account? <a href="{% url 'url_status_checker:register' %}">Sign up here!</a> </h5>
+      </div>
+    </div>
+  </div>
+{% endblock %}
