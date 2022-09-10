@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect
 from django.conf import settings
 from django.urls import URLPattern, URLResolver
-from django.contrib.auth import authenticate
 from django.contrib.auth.models import User
 
 from url_status_checker.forms import RegisterForm
